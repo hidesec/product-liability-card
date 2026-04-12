@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.ProductLiabilityCard.LoginTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxStrokeColor">@color/blue_primary</item>
+        <item name="hintTextColor">@color/login_hint_text</item>
+        <item name="endIconTint">@color/login_end_icon_tint</item>
+        <item name="passwordToggleTint">@color/login_end_icon_tint</item>
+    </style>
+
+    <style name="Widget.ProductLiabilityCard.LoginTextInputEditText" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:textColor">@color/login_input_text</item>
+        <item name="android:textColorHint">@color/login_hint_text</item>
+    </style>
+</resources>
+

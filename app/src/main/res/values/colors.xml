@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_dark">#04478E</color>
+    <color name="blue_primary">#2C76B7</color>
+    <color name="blue_medium">#5B9BD5</color>
+    <color name="blue_light">#BDD7EE</color>
+    <color name="bg_screen">#D9E5F1</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_light">#F5F5F5</color>
+    <color name="gray_medium">#9E9E9E</color>
+    <color name="gray_dark">#595959</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="status_active">#2E7D32</color>
+    <color name="status_expired">#C62828</color>
+    <color name="divider">#C8D8E8</color>
+    <color name="section_header_bg">#A5BFD8</color>
+    <color name="table_header">#C1CDD9</color>
+    <color name="table_border">#7F7F7F</color>
+    <color name="card_bg">#FFFFFF</color>
+</resources>

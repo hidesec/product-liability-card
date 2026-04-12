@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_screen">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@color/blue_dark">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="6dp"
+            android:src="@android:drawable/ic_menu_revert"
+            android:tint="@color/white"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Kembali" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Product Liability Card"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Vehicle info card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:minHeight="150dp"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:gravity="center"
+                    android:background="@color/bg_screen"
+                    android:layout_marginEnd="10dp">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/ic_car"
+                        android:tint="@color/blue_primary"
+                        android:contentDescription="Kendaraan" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvMenuPlate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue_dark"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvMenuVehicleName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="13sp"
+                        android:layout_marginTop="2dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvMenuCardNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="11sp"
+                    android:gravity="end" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@color/bg_screen"
+                        android:padding="6dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Model"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="10sp" />
+                        <TextView
+                            android:id="@+id/tvInfoModel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_primary"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@color/bg_screen"
+                        android:padding="6dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Type"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="10sp" />
+                        <TextView
+                            android:id="@+id/tvInfoType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_primary"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@color/bg_screen"
+                        android:padding="6dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Packing Month"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="10sp" />
+                        <TextView
+                            android:id="@+id/tvInfoPackingMonth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_primary"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@color/bg_screen"
+                        android:padding="6dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="VIN-NO"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="10sp" />
+                        <TextView
+                            android:id="@+id/tvInfoVinNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_primary"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@color/bg_screen"
+                        android:padding="6dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="F-DOK No"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="10sp" />
+                        <TextView
+                            android:id="@+id/tvInfoFDokNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_primary"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@color/bg_screen"
+                        android:padding="6dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Paint Code"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="10sp" />
+                        <TextView
+                            android:id="@+id/tvInfoPaintCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_primary"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Menu grid -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <!-- Row 1: Production Order | 1. Barcode | Incoming Inspection | Local Job Card -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <LinearLayout android:id="@+id/cardProductionOrder" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Production Order" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Production\nOrder" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardBarcode" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_barcode_scan" android:contentDescription="1. Barcode" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1. Barcode" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardIncoming" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_qr_code" android:contentDescription="Incoming Inspection" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Incoming\nInspection" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardLocalJobCard" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_gallery" android:contentDescription="Local Job Card" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Local\nJob Card" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Row 2: Hank On Parts | Station 00 | Station 01 | Station 02 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <LinearLayout android:id="@+id/cardHankOnParts" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Hank On Parts" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hank On\nParts" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardStation00" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Station 00" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Station\n00" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardStation01" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Station 01" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Station\n01" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardStation02" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Station 02" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Station\n02" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Row 3: Station 03 | Station 04 | Station 05 | Station 06 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <LinearLayout android:id="@+id/cardStation03" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Station 03" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Station\n03" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardStation04" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Station 04" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Station\n04" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardStation05" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Station 05" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Station\n05" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardStation06" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Station 06" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Station\n06" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Row 4: Station 07 | Station 08 | Station 09 | Q-Gate 01 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <LinearLayout android:id="@+id/cardStation07" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Station 07" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Station\n07" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardStation08" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Station 08" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Station\n08" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardStation09" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Station 09" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Station\n09" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardQGate01" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_qr_code" android:contentDescription="Q-Gate 01" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Q-Gate\n01" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Row 5: Technic Station | Station 12 | Station 13 | Station 14 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <LinearLayout android:id="@+id/cardTechnicStation" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Technic Station" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Technic\nStation" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardStation12" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Station 12" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Station\n12" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardStation13" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Station 13" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Station\n13" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardStation14" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Station 14" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Station\n14" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Row 6: Station 15 | Station 16 | Station 17 | Station 18 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <LinearLayout android:id="@+id/cardStation15" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Station 15" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Station\n15" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardStation16" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Station 16" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Station\n16" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardStation17" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Station 17" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Station\n17" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardStation18" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Station 18" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Station\n18" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Row 7: Station 19 | Q-Gate 02 | SA Cockpit | SA Front Door -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <LinearLayout android:id="@+id/cardStation19" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Station 19" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Station\n19" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardQGate02" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_qr_code" android:contentDescription="Q-Gate 02" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Q-Gate\n02" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardSACockpit" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="SA Cockpit" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SA\nCockpit" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardSAFrontDoor" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="SA Front Door" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SA Front\nDoor" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Row 8: SA Front Module | SA Engine Transmission | SA Wheel | Check Engine -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <LinearLayout android:id="@+id/cardSAFrontModule" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="SA Front Module" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SA Front\nModule" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardSAEngineTransmission" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="SA Engine Transmission" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SA Engine\nTransmission" android:textSize="9sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardSAWheel" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="SA Wheel" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SA\nWheel" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardCheckEngine" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Check Engine" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Check\nEngine" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Row 9: Wheel Alignment | Finish Line | Chassis Sub Assembly | After Roller -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <LinearLayout android:id="@+id/cardWheelAlignment" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Wheel Alignment" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Wheel\nAlignment" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardFinishLine" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Finish Line" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Finish\nLine" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardChassisSubAssembly" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Chassis Sub Assembly" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chassis Sub\nAssembly" android:textSize="9sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardAfterRoller" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="After Roller" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="After\nRoller" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Row 10: Rectification/Rework | Shortage Parts | Paint Finish | Finish Area -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <LinearLayout android:id="@+id/cardRectification" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_camera" android:contentDescription="Rectification/Rework" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rectification\n/Rework" android:textSize="9sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardShortageParts" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_gallery" android:contentDescription="Shortage Parts" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Shortage\nParts" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardPaintFinish" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_camera" android:contentDescription="Paint Finish" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Paint\nFinish" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardFinishArea" android:layout_width="0dp" android:layout_height="90dp" android:layout_weight="1" android:layout_marginStart="5dp" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_menu_card" android:clickable="true" android:focusable="true">
+                    <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_car" android:contentDescription="Finish Area" android:layout_marginBottom="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Finish\nArea" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/navMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@color/bg_screen">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_car"
+                android:tint="@color/blue_primary"
+                android:contentDescription="Menu Vehicle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu"
+                android:textColor="@color/blue_primary"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navForm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_gallery"
+                android:tint="@color/text_secondary"
+                android:contentDescription="Form" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Form"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navScan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_qr_code"
+                android:tint="@color/text_secondary"
+                android:contentDescription="Scan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

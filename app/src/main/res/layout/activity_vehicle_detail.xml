@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@color/blue_dark">
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="4dp"
+            android:src="@android:drawable/ic_menu_revert"
+            android:tint="@color/white"
+            android:layout_marginEnd="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Liability Card"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_table_border">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/bg_screen">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Standard Job Card CKD Model"
+                        android:textSize="8sp"
+                        android:textStyle="bold"
+                        android:padding="3dp"
+                        android:textColor="@color/text_primary" />
+
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+
+                    <TextView
+                        android:id="@+id/tvConveyor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="2. Main e-Job Card Trim Line"
+                        android:textSize="8sp"
+                        android:textStyle="bold"
+                        android:padding="3dp"
+                        android:textColor="@color/text_primary" />
+
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Date :"
+                        android:textSize="8sp"
+                        android:padding="3dp"
+                        android:textColor="@color/text_secondary" />
+
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+
+                    <TextView
+                        android:id="@+id/tvDetailIssueDateTop"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="8sp"
+                        android:padding="3dp"
+                        android:textColor="@color/text_primary" />
+
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Prod. No. :"
+                        android:textSize="8sp"
+                        android:padding="3dp"
+                        android:textColor="@color/text_secondary" />
+
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+
+                    <TextView
+                        android:id="@+id/tvDetailCardNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="8sp"
+                        android:textStyle="bold"
+                        android:padding="3dp"
+                        android:textColor="@color/blue_dark" />
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/table_border" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/bg_screen">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="F-DOK Prod-No. :"
+                        android:textSize="8sp"
+                        android:padding="3dp"
+                        android:textColor="@color/text_secondary" />
+
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+
+                    <TextView
+                        android:id="@+id/tvFDokProdNo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:textSize="8sp"
+                        android:padding="3dp"
+                        android:textColor="@color/text_primary" />
+
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Komm-No. :"
+                        android:textSize="8sp"
+                        android:padding="3dp"
+                        android:textColor="@color/text_secondary" />
+
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+
+                    <TextView
+                        android:id="@+id/tvKommNo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="8sp"
+                        android:padding="3dp"
+                        android:textColor="@color/text_primary" />
+
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="VIN-NUMBER :"
+                        android:textSize="8sp"
+                        android:padding="3dp"
+                        android:textColor="@color/text_secondary" />
+
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+
+                    <TextView
+                        android:id="@+id/tvDetailVinTop"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="8sp"
+                        android:padding="3dp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textColor="@color/text_primary" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_table_border">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="@color/table_header">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:text="Date" android:textSize="9sp" android:textStyle="bold" android:padding="3dp" android:textColor="@color/text_primary" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="8" android:text="VIN-NUMBER" android:textSize="9sp" android:textStyle="bold" android:padding="3dp" android:textColor="@color/text_primary" />
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/table_border" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="@color/white">
+                    <TextView android:id="@+id/tvDetailIssueDate" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:textSize="9sp" android:textColor="@color/text_primary" android:padding="3dp" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:id="@+id/tvDetailVin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="8" android:textSize="9sp" android:textColor="@color/text_primary" android:padding="3dp" />
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/table_border" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="@color/table_header">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:text="Packing Month" android:textSize="9sp" android:textStyle="bold" android:padding="3dp" android:textColor="@color/text_primary" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:text="Local Prod" android:textSize="9sp" android:textStyle="bold" android:padding="3dp" android:textColor="@color/text_primary" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:text="Paint" android:textSize="9sp" android:textStyle="bold" android:padding="3dp" android:textColor="@color/text_primary" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:text="Interior" android:textSize="9sp" android:textStyle="bold" android:padding="3dp" android:textColor="@color/text_primary" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Type" android:textSize="9sp" android:textStyle="bold" android:padding="3dp" android:textColor="@color/text_primary" />
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/table_border" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="@color/white">
+                    <TextView android:id="@+id/tvPackingMonth" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:textSize="9sp" android:textColor="@color/text_primary" android:padding="3dp" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:id="@+id/tvLocalProd" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:textSize="9sp" android:textColor="@color/text_primary" android:padding="3dp" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:id="@+id/tvPaint" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:textSize="9sp" android:textColor="@color/text_primary" android:padding="3dp" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:id="@+id/tvInterior" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:textSize="9sp" android:textColor="@color/text_primary" android:padding="3dp" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:id="@+id/tvDetailType" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textSize="9sp" android:textColor="@color/text_primary" android:padding="3dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="3dp" />
+
+            <View android:layout_width="match_parent" android:layout_height="2dp" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Station 07" android:textSize="10sp" android:textStyle="bold" android:textColor="@color/text_primary" android:paddingTop="4dp" android:paddingBottom="3dp" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:background="@drawable/bg_table_border" android:layout_marginEnd="3dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0310 00300 Pos. 1" android:textSize="9sp" android:textStyle="bold" android:padding="4dp" android:background="@color/bg_screen" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/table_border" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TC: Hood to hinges\nLH+RH (4x)" android:textSize="9sp" android:padding="4dp" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/table_border" />
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:padding="3dp">
+                        <TextView android:id="@+id/tvScan1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="ID00017892" android:textSize="8sp" android:textColor="@color/blue_primary" android:padding="3dp" android:background="@drawable/bg_scan_box" android:gravity="center" android:clickable="true" android:focusable="true" />
+                        <TextView android:layout_width="20dp" android:layout_height="20dp" android:text="3" android:textSize="9sp" android:textStyle="bold" android:gravity="center" android:textColor="@color/black" android:background="@drawable/bg_button_red" android:layout_marginStart="3dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:background="@drawable/bg_table_border" android:layout_marginEnd="3dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0310 00300 Pos. 1" android:textSize="9sp" android:textStyle="bold" android:padding="4dp" android:background="@color/bg_screen" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/table_border" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TC: Hood to tailgate\nLH+RH (4x)" android:textSize="9sp" android:padding="4dp" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/table_border" />
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:padding="3dp">
+                        <TextView android:id="@+id/tvScan2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="ID00017892" android:textSize="8sp" android:textColor="@color/blue_primary" android:padding="3dp" android:background="@drawable/bg_scan_box" android:gravity="center" android:clickable="true" android:focusable="true" />
+                        <TextView android:layout_width="20dp" android:layout_height="20dp" android:text="4" android:textSize="9sp" android:textStyle="bold" android:gravity="center" android:textColor="@color/black" android:background="@drawable/bg_button_red" android:layout_marginStart="3dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:background="@drawable/bg_table_border">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0310 00300 Pos. 1" android:textSize="9sp" android:textStyle="bold" android:padding="4dp" android:background="@color/bg_screen" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/table_border" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TC: Hood to tailgate\nLH+RH (4x)" android:textSize="9sp" android:padding="4dp" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/table_border" />
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:padding="3dp">
+                        <TextView android:id="@+id/tvScan3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="ID00017892" android:textSize="8sp" android:textColor="@color/blue_primary" android:padding="3dp" android:background="@drawable/bg_scan_box" android:gravity="center" android:clickable="true" android:focusable="true" />
+                        <TextView android:layout_width="20dp" android:layout_height="20dp" android:text="5" android:textSize="9sp" android:textStyle="bold" android:gravity="center" android:textColor="@color/black" android:background="@drawable/bg_button_red" android:layout_marginStart="3dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="3dp" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/bg_table_border">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="ASD Roof module 1 front (Barcode)" android:textSize="9sp" android:textStyle="bold" android:padding="3dp" android:background="@color/bg_screen" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="61879334" android:textSize="9sp" android:padding="3dp" android:background="@color/bg_screen" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:text="Upper Wishbone FR left side (Barcode)" android:textSize="9sp" android:textStyle="bold" android:padding="3dp" android:background="@color/bg_screen" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="6187934" android:textSize="9sp" android:padding="3dp" android:background="@color/bg_screen" />
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/table_border" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <LinearLayout android:id="@+id/barcodeArea1" android:layout_width="0dp" android:layout_height="80dp" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:background="@color/white" android:clickable="true" android:focusable="true">
+                        <ImageView android:layout_width="40dp" android:layout_height="24dp" android:src="@drawable/ic_barcode_scan" android:scaleType="fitCenter" android:contentDescription="Scan" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tap barcode" android:textSize="10sp" android:textColor="@color/blue_primary" android:layout_marginTop="3dp" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ASD Roof module 1 front" android:textSize="10sp" android:textColor="@color/text_secondary" />
+                    </LinearLayout>
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <LinearLayout android:id="@+id/barcodeArea2" android:layout_width="0dp" android:layout_height="80dp" android:layout_weight="2" android:orientation="vertical" android:gravity="center" android:background="@color/white" android:clickable="true" android:focusable="true">
+                        <ImageView android:layout_width="64dp" android:layout_height="24dp" android:src="@drawable/ic_barcode_scan" android:scaleType="fitCenter" android:contentDescription="Scan" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tap barcode" android:textSize="10sp" android:textColor="@color/blue_primary" android:layout_marginTop="3dp" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Upper Wishbone FR left side" android:textSize="10sp" android:textColor="@color/text_secondary" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/table_border" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="3dp">
+                    <TextView android:id="@+id/tvBarcode1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Hasil scan 1" android:textSize="10sp" android:textColor="@color/blue_primary" android:textColorHint="@color/text_secondary" android:padding="3dp" android:gravity="center" android:background="@drawable/bg_scan_box" android:clickable="true" android:focusable="true" />
+                    <View android:layout_width="4dp" android:layout_height="1dp" />
+                    <TextView android:id="@+id/tvBarcode2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:hint="Hasil scan 2" android:textSize="10sp" android:textColor="@color/blue_primary" android:textColorHint="@color/text_secondary" android:padding="3dp" android:gravity="center" android:background="@drawable/bg_scan_box" android:clickable="true" android:focusable="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_table_border"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Inspection Image"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:paddingBottom="4dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/table_border"
+                    android:layout_marginBottom="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="2dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="IS-Tester (Image)"
+                            android:textSize="9sp"
+                            android:textStyle="bold"
+                            android:background="@color/bg_screen"
+                            android:padding="3dp"
+                            android:paddingBottom="3dp" />
+
+                        <FrameLayout
+                            android:id="@+id/layoutIsTesterBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:background="@drawable/bg_scan_box"
+                            android:clickable="true"
+                            android:focusable="true">
+
+                            <ImageView
+                                android:id="@+id/ivIsTesterImage"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:visibility="gone"
+                                android:contentDescription="IS-Tester image" />
+
+                            <LinearLayout
+                                android:id="@+id/layoutIsTesterPlaceholder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/ic_gallery"
+                                    android:contentDescription="Upload" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tap upload image"
+                                    android:textSize="9sp"
+                                    android:textColor="@color/blue_primary"
+                                    android:layout_marginTop="3dp" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Brake fluid filling sticker (Image)"
+                            android:textSize="9sp"
+                            android:textStyle="bold"
+                            android:background="@color/bg_screen"
+                            android:padding="3dp"
+                            android:paddingBottom="3dp" />
+
+                        <FrameLayout
+                            android:id="@+id/layoutBrakeStickerBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:background="@drawable/bg_scan_box"
+                            android:clickable="true"
+                            android:focusable="true">
+
+                            <ImageView
+                                android:id="@+id/ivBrakeStickerImage"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:visibility="gone"
+                                android:contentDescription="Brake fluid sticker image" />
+
+                            <LinearLayout
+                                android:id="@+id/layoutBrakeStickerPlaceholder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/ic_gallery"
+                                    android:contentDescription="Upload" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tap upload image"
+                                    android:textSize="9sp"
+                                    android:textColor="@color/blue_primary"
+                                    android:layout_marginTop="3dp" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="3dp" />
+
+            <!-- ── Foto / Dokumen header + quick-action buttons ── -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingBottom="4dp">
+                <TextView
+                    android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:text="Foto / Dokumen"
+                    android:textSize="11sp" android:textStyle="bold"
+                    android:textColor="@color/text_primary" />
+                <ImageView
+                    android:id="@+id/btnScanBarcode"
+                    android:layout_width="34dp" android:layout_height="34dp"
+                    android:src="@drawable/ic_barcode_scan"
+                    android:padding="5dp"
+                    android:background="@drawable/bg_scan_box"
+                    android:contentDescription="Scan barcode"
+                    android:layout_marginEnd="6dp"
+                    android:clickable="true" android:focusable="true" />
+                <ImageView
+                    android:id="@+id/btnUploadImage"
+                    android:layout_width="34dp" android:layout_height="34dp"
+                    android:src="@drawable/ic_gallery"
+                    android:padding="5dp"
+                    android:background="@drawable/bg_scan_box"
+                    android:contentDescription="Upload gambar"
+                    android:clickable="true" android:focusable="true" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/layoutPhotoBox"
+                android:layout_width="match_parent"
+                android:layout_height="112dp"
+                android:background="@drawable/bg_table_border"
+                android:clickable="true"
+                android:focusable="true">
+                <ImageView
+                    android:id="@+id/ivDocumentPhoto"
+                    android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:scaleType="centerCrop" android:visibility="gone"
+                    android:contentDescription="Foto dokumen" />
+                <LinearLayout
+                    android:id="@+id/layoutPhotoPlaceholder"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical" android:gravity="center">
+                    <ImageView
+                        android:layout_width="32dp" android:layout_height="32dp"
+                        android:src="@drawable/ic_camera"
+                        android:layout_marginBottom="6dp"
+                        android:contentDescription="Kamera" />
+                    <TextView
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Tap untuk scan barcode / upload foto"
+                        android:textColor="@color/blue_primary"
+                        android:textSize="10sp" android:gravity="center" />
+                    <LinearLayout
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp" android:gravity="center">
+                        <ImageView
+                            android:layout_width="22dp" android:layout_height="22dp"
+                            android:src="@drawable/ic_barcode_scan"
+                            android:layout_marginEnd="16dp"
+                            android:contentDescription="Barcode" />
+                        <ImageView
+                            android:layout_width="22dp" android:layout_height="22dp"
+                            android:src="@drawable/ic_gallery"
+                            android:contentDescription="Galeri" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="4dp" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/bg_table_border">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="@color/table_header">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="No" android:textSize="8sp" android:textStyle="bold" android:textColor="@color/text_primary" android:padding="3dp" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Type" android:textSize="8sp" android:textStyle="bold" android:textColor="@color/text_primary" android:padding="3dp" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:text="Action No." android:textSize="8sp" android:textStyle="bold" android:textColor="@color/text_primary" android:padding="3dp" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:text="Station/Shop" android:textSize="8sp" android:textStyle="bold" android:textColor="@color/text_primary" android:padding="3dp" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="3" android:text="Description" android:textSize="8sp" android:textStyle="bold" android:textColor="@color/text_primary" android:padding="3dp" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:text="Action" android:textSize="8sp" android:textStyle="bold" android:textColor="@color/text_primary" android:padding="3dp" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:text="Valid until" android:textSize="8sp" android:textStyle="bold" android:textColor="@color/text_primary" android:padding="3dp" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="CS1" android:textSize="8sp" android:textStyle="bold" android:textColor="@color/text_primary" android:padding="3dp" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="CS2" android:textSize="8sp" android:textStyle="bold" android:textColor="@color/text_primary" android:padding="3dp" />
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/table_border" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="24dp" android:orientation="horizontal" android:background="@color/white">
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" />
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/table_border" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="24dp" android:orientation="horizontal" android:background="@color/white">
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" />
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/table_border" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="24dp" android:orientation="horizontal" android:background="@color/white">
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" />
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/table_border" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="24dp" android:orientation="horizontal" android:background="@color/white">
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" />
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/table_border" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="24dp" android:orientation="horizontal" android:background="@color/white">
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" />
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/table_border" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="24dp" android:orientation="horizontal" android:background="@color/white">
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" />
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/table_border" />
+                <TextView android:id="@+id/btnDynamic" android:layout_width="match_parent" android:layout_height="34dp" android:text="Dynamic" android:textColor="@color/black" android:textSize="13sp" android:textStyle="bold" android:gravity="center" android:background="@color/blue_primary" android:clickable="true" android:focusable="true" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="4dp" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/bg_table_border">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="@color/table_header">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="No" android:textSize="8sp" android:textStyle="bold" android:textColor="@color/text_primary" android:padding="3dp" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="5" android:text="Part - Fault Location - Fault Description" android:textSize="8sp" android:textStyle="bold" android:textColor="@color/text_primary" android:padding="3dp" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Prio" android:textSize="8sp" android:textStyle="bold" android:textColor="@color/text_primary" android:padding="3dp" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:text="Reported" android:textSize="8sp" android:textStyle="bold" android:textColor="@color/text_primary" android:padding="3dp" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:text="Rectified" android:textSize="8sp" android:textStyle="bold" android:textColor="@color/text_primary" android:padding="3dp" />
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/table_border" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:text="QM-Release" android:textSize="8sp" android:textStyle="bold" android:textColor="@color/text_primary" android:padding="3dp" />
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/table_border" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="24dp" android:orientation="horizontal" android:background="@color/white">
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5" android:text="OK" android:textSize="8sp" android:textColor="@color/text_primary" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:gravity="center" android:padding="2dp">
+                        <TextView android:id="@+id/tvFaultScan" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="Scan" android:textSize="11sp" android:textColor="@color/blue_primary" android:textColorHint="@color/text_secondary" android:gravity="center" android:background="@drawable/bg_scan_box" android:clickable="true" android:focusable="true" />
+                    </LinearLayout>
+                    <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" />
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/table_border" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="24dp" android:orientation="horizontal" android:background="@color/white">
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" /><View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/divider" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:textSize="8sp" android:padding="3dp" />
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/table_border" />
+                <TextView android:id="@+id/btnFaultRecord" android:layout_width="match_parent" android:layout_height="34dp" android:text="Fault Record" android:textColor="@color/black" android:textSize="13sp" android:textStyle="bold" android:gravity="center" android:background="@color/blue_primary" android:clickable="true" android:focusable="true" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="4dp" />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Page 1 of 27" android:textSize="9sp" android:textColor="@color/text_secondary" android:paddingBottom="2dp" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="@drawable/bg_table_border" android:padding="4dp" android:gravity="center_vertical">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:text="Sign out inspector" android:textSize="9sp" android:textColor="@color/text_secondary" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:text="Date: 02.07.2020" android:textSize="9sp" android:textColor="@color/text_secondary" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Stamp:" android:textSize="9sp" android:paddingEnd="4dp" />
+                <TextView android:id="@+id/tvStamp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:hint="Scan" android:textSize="11sp" android:textColor="@color/blue_primary" android:textColorHint="@color/text_secondary" android:padding="3dp" android:gravity="center" android:background="@drawable/bg_scan_box" android:clickable="true" android:focusable="true" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/navMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_car"
+                android:tint="@color/text_secondary"
+                android:contentDescription="Menu Vehicle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navForm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@color/bg_screen">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_gallery"
+                android:tint="@color/blue_primary"
+                android:contentDescription="Form" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Form"
+                android:textColor="@color/blue_primary"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navScan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_qr_code"
+                android:tint="@color/text_secondary"
+                android:contentDescription="Scan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

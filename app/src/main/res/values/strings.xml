@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Product Liability Card</string>
+    <string name="login_title">Product Liability Card</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="btn_login">MASUK</string>
+    <string name="scan_barcode">Scan Barcode</string>
+    <string name="vehicle_list_title">Daftar Kendaraan</string>
+    <string name="vehicle_detail_title">Kartu Tanggung Gugat Produk</string>
+    <string name="scan_or_upload">Foto / Dokumen</string>
+    <string name="choose_action">Pilih Aksi</string>
+    <string name="take_photo">Ambil Foto</string>
+    <string name="from_gallery">Dari Galeri</string>
+    <string name="scan_barcode_action">Scan Barcode</string>
+    <string name="cancel">Batal</string>
+    <string name="logout">Keluar</string>
+    <string name="welcome">Selamat Datang</string>
+    <string name="scan_instruction">Scan barcode kendaraan untuk memulai</string>
+</resources>
