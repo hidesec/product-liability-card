@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -15,10 +16,11 @@
         android:background="@color/blue_dark">
 
         <TextView
+            android:id="@+id/tvHeaderTitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Daftar Kendaraan"
+            android:text="Daftar Proses"
             android:textColor="@color/white"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -57,21 +59,24 @@
         android:background="@color/section_header_bg">
 
         <TextView
+            android:id="@+id/tvSectionTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Pilih kendaraan di bawah ini"
+            android:text="Pilih area proses di bawah ini"
             android:textColor="@color/blue_dark"
             android:textSize="12sp"
             android:textStyle="bold" />
 
     </LinearLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvVehicles"
+    <ListView
+        android:id="@+id/lvProcesses"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:clipToPadding="false" />
+        android:background="@color/white"
+        android:divider="@color/divider"
+        android:dividerHeight="1dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -92,7 +97,7 @@
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:src="@drawable/ic_qr_code"
-            android:tint="@color/blue_primary"
+            app:tint="@color/blue_primary"
             android:contentDescription="Scan Barcode" />
 
         <TextView

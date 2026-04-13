@@ -35,6 +35,9 @@ public class VehicleMenuActivity extends AppCompatActivity {
         tvInfoPaintCode = findViewById(R.id.tvInfoPaintCode);
 
         VehicleModel vehicle = getIntent().getParcelableExtra("vehicle");
+        String selectedProcess = getIntent().getStringExtra("selected_process");
+        String selectedSubProcess = getIntent().getStringExtra("selected_subprocess");
+        String selectedMenuFromList = getIntent().getStringExtra("selected_menu");
 
         if (vehicle != null) {
             tvMenuPlate.setText(vehicle.getPlateNumber() != null ? vehicle.getPlateNumber() : vehicle.getVin());
@@ -58,12 +61,14 @@ public class VehicleMenuActivity extends AppCompatActivity {
         findViewById(R.id.navForm).setOnClickListener(v -> {
             Intent intent = new Intent(VehicleMenuActivity.this, VehicleDetailActivity.class);
             intent.putExtra("vehicle", vehicle);
+            putSelectionExtras(intent, selectedProcess, selectedSubProcess, selectedMenuFromList);
             startActivity(intent);
         });
         findViewById(R.id.navScan).setOnClickListener(v -> {
             Intent intent = new Intent(VehicleMenuActivity.this, VehicleDetailActivity.class);
             intent.putExtra("vehicle", vehicle);
             intent.putExtra("selected_menu", "1. Barcode");
+            putSelectionExtras(intent, selectedProcess, selectedSubProcess, "1. Barcode");
             startActivity(intent);
         });
 
@@ -100,8 +105,21 @@ public class VehicleMenuActivity extends AppCompatActivity {
                 Intent intent = new Intent(VehicleMenuActivity.this, VehicleDetailActivity.class);
                 intent.putExtra("vehicle", vehicle);
                 intent.putExtra("selected_menu", label);
+                putSelectionExtras(intent, selectedProcess, selectedSubProcess, label);
                 startActivity(intent);
             });
+        }
+    }
+
+    private void putSelectionExtras(Intent intent, String process, String subProcess, String selectedMenu) {
+        if (process != null) {
+            intent.putExtra("selected_process", process);
+        }
+        if (subProcess != null) {
+            intent.putExtra("selected_subprocess", subProcess);
+        }
+        if (selectedMenu != null) {
+            intent.putExtra("selected_menu", selectedMenu);
         }
     }
 
