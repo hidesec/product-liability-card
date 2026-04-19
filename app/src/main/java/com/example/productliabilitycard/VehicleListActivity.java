@@ -2,11 +2,11 @@ package com.example.productliabilitycard;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 import java.util.Arrays;
@@ -16,7 +16,7 @@ public class VehicleListActivity extends AppCompatActivity {
 
     private static final String EXTRA_MENU_GROUP = "menu_group";
 
-    private ListView lvProcesses;
+    private RecyclerView rvProcesses;
     private LinearLayout btnScan;
     private TextView tvBarcodeResult;
     private TextView btnLogout;
@@ -30,7 +30,7 @@ public class VehicleListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vehicle_list);
 
-        lvProcesses = findViewById(R.id.lvProcesses);
+        rvProcesses = findViewById(R.id.rvProcesses);
         btnScan = findViewById(R.id.btnScan);
         tvBarcodeResult = findViewById(R.id.tvBarcodeResult);
         btnLogout = findViewById(R.id.btnLogout);
@@ -101,25 +101,17 @@ public class VehicleListActivity extends AppCompatActivity {
             items = Collections.emptyList();
         }
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(
-                this,
-                android.R.layout.simple_list_item_1,
-                items
-        );
-        lvProcesses.setAdapter(adapter);
-
-        lvProcesses.setOnItemClickListener((parent, view, position, id) -> {
-            String selected = items.get(position);
-
+        rvProcesses.setLayoutManager(new GridLayoutManager(this, 2));
+        ProcessCardAdapter adapter = new ProcessCardAdapter(items, selected -> {
             if (currentMenuGroup == null && ("Welding".equals(selected) || "EOL".equals(selected))) {
                 openSubMenu(selected);
                 return;
             }
-
             String process = currentMenuGroup == null ? selected : currentMenuGroup;
             String subProcess = currentMenuGroup == null ? null : selected;
             openProductLiabilityCard(process, subProcess);
         });
+        rvProcesses.setAdapter(adapter);
     }
 
     private void openSubMenu(String group) {
@@ -154,4 +146,3 @@ public class VehicleListActivity extends AppCompatActivity {
         );
     }
 }
-

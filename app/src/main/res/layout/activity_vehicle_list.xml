@@ -69,14 +69,12 @@
 
     </LinearLayout>
 
-    <ListView
-        android:id="@+id/lvProcesses"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProcesses"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@color/white"
-        android:divider="@color/divider"
-        android:dividerHeight="1dp" />
+        android:background="@color/white" />
 
     <LinearLayout
         android:layout_width="match_parent"
